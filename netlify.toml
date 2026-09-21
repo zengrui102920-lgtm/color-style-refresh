@@ -1,0 +1,5 @@
+# TanStack Start + Nitro: the Netlify preset (auto-detected during Netlify
+# builds) writes static assets to `dist/` and the SSR handler to
+# `.netlify/functions-internal/`, which Netlify picks up on its own.
+[build]
+  publish = "dist"
