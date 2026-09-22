@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PlumbWright Plumbing &amp; Gas, LLC — Owner-operated plumber</title>
 <meta name="description" content="PlumbWright Plumbing &amp; Gas, LLC. Owner-operated by Michael Wright. Water heaters, gas lines, valves, leak repair and bathroom remodels. 5.0 stars on Google. Call (720) 982-8881.">
-<meta name="theme-color" content="#f3f2f2">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:title" content="PlumbWright Plumbing &amp; Gas, LLC">
 <meta property="og:description" content="Owner-operated plumbing and gas work. On time, reasonably priced, up to code. 5.0 on Google. Call (720) 982-8881.">
@@ -57,6 +57,46 @@ details[open] [data-faq-plus] { transform: rotate(45deg); }
 body { margin: 0; overflow-x: hidden; background: var(--color-bg); }
 a { color: var(--color-accent); }
 a:hover { color: var(--color-accent-700); }
+/* Cleaner light presentation: preserve the page structure and brand, reduce visual noise. */
+header, section { border-bottom-width: 1px !important; }
+header { box-shadow: 0 1px 12px color-mix(in srgb, var(--color-text) 5%, transparent); }
+.btn { border-radius: 4px; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+.btn:hover { transform: translateY(-1px); }
+#top { min-height: 72svh !important; }
+#top > [data-px="0.12"],
+#top > [data-px="0.06"],
+#top > [data-px="0.3"] { display: none; }
+#top > img[aria-hidden="true"] { opacity: .045 !important; width: min(32vw, 390px) !important; }
+#top > [data-px="-0.04"] { max-width: 1180px !important; padding-top: 76px !important; padding-bottom: 76px !important; }
+#top h1 { font-size: clamp(46px, 7vw, 96px) !important; line-height: .96 !important; max-width: 13ch !important; }
+#services > [data-px], #quote > [data-px], #hours > [data-px] { display: none; }
+#services > div, #work > div, #quote > div, #reviews > div,
+#hours > div, #faq > div, #location > div, #about > div { padding-top: 72px !important; padding-bottom: 72px !important; }
+#services article { background: var(--color-bg); border: 1px solid var(--color-divider) !important; border-radius: 4px; }
+#services article:last-child { background: var(--color-accent); border-color: var(--color-accent) !important; }
+#services article:last-child h3, #services article:last-child a { color: var(--color-bg); }
+#services article:last-child a { border-color: var(--color-bg); }
+#services div[style*="grid-template-columns: repeat(auto-fit, minmax(260px"] {
+  gap: 16px !important;
+  border: 0 !important;
+}
+#reviews div[style*="grid-template-columns: repeat(auto-fit, minmax(290px"] {
+  gap: 16px !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+#reviews figure { border: 1px solid var(--color-divider); border-radius: 4px; }
+[data-symptom] { border-width: 1px !important; border-radius: 4px !important; }
+[data-panel] { border-width: 1px !important; border-radius: 4px; }
+@media (max-width: 680px) {
+  header > div { padding: 8px 16px !important; }
+  header img { width: 124px !important; height: 54px !important; }
+  #top { min-height: auto !important; }
+  #top > [data-px="-0.04"] { padding: 62px 20px 66px !important; }
+  #top h1 { font-size: clamp(44px, 14vw, 68px) !important; }
+  #services > div, #work > div, #quote > div, #reviews > div,
+  #hours > div, #faq > div, #location > div, #about > div { padding: 60px 20px !important; }
+}
 @keyframes pwFlow { to { stroke-dashoffset: -600px; } }
 @keyframes pwDrift { 0% { transform: translate3d(0,0,0); } 50% { transform: translate3d(-28px,14px,0); } 100% { transform: translate3d(0,0,0); } }
 @keyframes pwPulse { 0%,100% { opacity: .18; } 50% { opacity: .5; } }
@@ -67,7 +107,7 @@ a:hover { color: var(--color-accent-700); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"PlumbWright Plumbing & Gas, LLC","telephone":"+1-720-982-8881","founder":"Michael Wright","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"8"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"00:00","closes":"23:59"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"PlumbWright Plumbing & Gas, LLC","telephone":"+1-720-982-8881","founder":"Michael Wright","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"15"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"00:00","closes":"23:59"}]}</script>
 </helmet>
 
 <div style="font-family: var(--font-body); color: var(--color-text); background: var(--color-bg);">
@@ -144,7 +184,7 @@ a:hover { color: var(--color-accent-700); }
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8z"></path></svg>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21.2l1.4-7L2 9.4l7-.8z"></path></svg>
         </span>
-        5.0 · 8 Google reviews
+        5.0 · 15 Google reviews
       </span>
     </div>
 
@@ -169,7 +209,7 @@ a:hover { color: var(--color-accent-700); }
       <div style="font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin-top: 6px;">Google rating</div>
     </div>
     <div style="padding: 26px 24px; border-right: 1px solid var(--color-divider);">
-      <div style="font-family: var(--font-heading); font-weight: 800; font-size: 32px; line-height: 1;">8</div>
+      <div style="font-family: var(--font-heading); font-weight: 800; font-size: 32px; line-height: 1;">15</div>
       <div style="font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin-top: 6px;">Reviews, all five star</div>
     </div>
     <div style="padding: 26px 24px; border-right: 1px solid var(--color-divider);">
@@ -460,7 +500,7 @@ a:hover { color: var(--color-accent-700); }
     <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 44px;">
       <div>
         <h6 style="color: var(--color-accent); margin: 0 0 16px;">In their words</h6>
-        <h2 style="font-size: clamp(30px, 4.2vw, 50px); line-height: 1.04; letter-spacing: -0.028em; margin: 0; max-width: 18ch;">Eight reviews. Every one of them five stars.</h2>
+        <h2 style="font-size: clamp(30px, 4.2vw, 50px); line-height: 1.04; letter-spacing: -0.028em; margin: 0; max-width: 18ch;">15 reviews. Every one of them five stars.</h2>
       </div>
       <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=PlumbWright%20Plumbing%20%26%20Gas%2C%20LLC" target="_blank" rel="noopener" style="min-height: 44px; padding-inline: 18px;">Read them on Google</a>
     </div>
@@ -673,7 +713,7 @@ a:hover { color: var(--color-accent-700); }
       </div>
       <div>
         <div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: .75; margin-bottom: 10px;">Rating</div>
-        <div style="font-size: 15px; line-height: 1.55;">5.0 out of 5<br>8 Google reviews</div>
+        <div style="font-size: 15px; line-height: 1.55;">5.0 out of 5<br>15 Google reviews</div>
       </div>
     </div>
 
